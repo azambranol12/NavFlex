@@ -1,0 +1,99 @@
+main {
+    width: 100%;
+
+    h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 75px;
+    color: #333;
+    }
+}
+
+
+/* Contenedor de Navegación Común */
+.contenedorNavs {
+    width: 1000px;
+    height: 50px;
+    background-color: #a7b8f5;
+    margin: 0 auto 20px;
+    border: 1px solid #8897d6;
+    padding: 10px;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        border: 1px solid #ccc;
+        text-align: center;
+    }
+
+    li a {
+        display: block;
+        padding: 15px;
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+    }
+}
+
+/* Colores de Botones */
+.botonNaranja { 
+    background-color: #fce5cd; 
+
+}
+
+.botonVerde { 
+    background-color: #d9ead3;
+}
+
+.botonBlanco { 
+    background-color: #ffffff; 
+}
+
+.botonRosa { 
+    background-color: #f4cccc; 
+}
+
+.botonRojo { 
+    background-color: #f4cccc; 
+}
+
+.botonAmarillo { 
+    background-color: #fff2cc; 
+}
+
+/* SIN FLEX 1 */
+.sinFlex1 li {
+    display: inline-block;
+    width: 250px;
+}
+
+/* SIN FLEX 2 */
+.sinFlex2 li {
+    display: inline-block;
+    width: 250px;
+}
+
+/* FLEX 1 */
+.flex1 ul {
+    display: flex;
+    flex-direction: row; /*Se pone para que el flex vaya en row pero como por defecto viene asi no hace falta ponerlo si no queremos*/
+}
+
+.flex1 li {
+    flex-grow: 1; /*Con esto hacemos que cada boton ocupe el ancho restante de todo de forma proporcional cada uno*/
+}
+
+/* FLEX 2 */
+.flex2 ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex2 li {
+    flex-basis: 250px; /* Con el basis hacemos que cada boton parta desde una medida y con el shrink se ajuste proporcionalmente cada boton a lo que hay de espacio util en el nav*/
+    flex-shrink: 1;
+}
